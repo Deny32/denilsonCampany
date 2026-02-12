@@ -1,18 +1,20 @@
-<!DOCTYPE html><html lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>José Miguel Casimiro Francisco | Portfólio Profissional</title>
   <style>
     *{box-sizing:border-box;margin:0;padding:0;font-family:Segoe UI,Arial,sans-serif}
-    body{background:#e0f7fa;color:#333;line-height:1.6}
-    header{background:#0a3d62;color:#fff;padding:30px}
+    html, body {height: 100%; margin:0;} /* ✅ Corrige altura total */
+    body{background:#e0f7fa;color:#333;line-height:1.6; display:flex; flex-direction:column;} /* ✅ Flex vertical */
+    header{background:rgb(31, 151, 199);color:#fff;padding:30px}
     header h1{font-size:32px}
     header p{font-size:16px;opacity:0.9}
     nav{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px}
     nav button{padding:10px 14px;border:none;border-radius:6px;background:#fff;color:#0a3d62;font-weight:bold;cursor:pointer}
     nav button:hover{background:#dff1ff}
-    main{padding:30px;max-width:1200px;margin:auto}
+    main{padding:30px;max-width:1200px;margin:auto; flex:1;} /* ✅ Ocupa espaço restante */
     section{display:none}
     section.active{display:block}
     h2{margin-bottom:20px;color:#0a3d62;font-size:26px}
@@ -26,7 +28,8 @@
     th,td{padding:8px;border-bottom:1px solid #ddd;text-align:left}
   </style>
 </head>
-<body><header>
+<body>
+<header>
   <h1>José Miguel Casimiro Francisco</h1>
   <p>Informática • Tecnologia • Ensino</p>
   <nav>
@@ -39,99 +42,115 @@
     <button onclick="show('servicos')">Serviços Técnicos</button>
     <button onclick="toggleLang()">PT / EN</button>
   </nav>
-</header><main><section id="home" class="active">
-  <div class="card">
-    <h2 id="welcome">Bem-vindo</h2>
-    <p id="welcomeText">Este é o meu site profissional, criado para apresentar as minhas competências na área da informática, ensino tecnológico e comercialização de materiais tecnológicos.</p>
-  </div>
-</section><section id="info">
-  <h2>Informações Pessoais</h2>
-  <div class="card" style="display:flex;gap:30px;align-items:flex-start;flex-wrap:wrap">
-    <div style="flex:1;text-align:center">
-      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Perfil" style="width:160px;border-radius:50%;margin-bottom:15px">
-      <h3>José Miguel Casimiro Francisco</h3>
-      <p style="opacity:0.8">Profissional de Informática & Tecnologia</p>
+</header>
+<main>
+  <section id="home" class="active">
+    <div class="card">
+      <h2 id="welcome">Bem-vindo</h2>
+      <p id="welcomeText">Este é o meu site profissional, criado para apresentar as minhas competências na área da informática, ensino tecnológico e comercialização de materiais tecnológicos.</p>
     </div>
-    <div style="flex:2">
-      <table>
-        <tr><th>Nome Completo</th><td>José Miguel Casimiro Francisco</td></tr>
-        <tr><th>Data de Nascimento</th><td>01/01/2006</td></tr>
-        <tr><th>Naturalidade</th><td>Cabinda</td></tr>
-        <tr><th>Residência</th><td>Cabinda</td></tr>
-        <tr><th>Estado Civil</th><td>Solteiro</td></tr>
-        <tr><th>Área Profissional</th><td>Informática e Tecnologia</td></tr>
-        <tr><th>Línguas</th><td>Português (Nativo), Inglês (Avançado – C1)</td></tr>
-      </table>
+  </section>
+  <section id="info">
+    <h2>Informações Pessoais</h2>
+    <div class="card" style="display:flex;gap:30px;align-items:flex-start;flex-wrap:wrap">
+      <div style="flex:1;text-align:center">
+        <img src="myphoto.jpg" alt="Perfil" style="width:160px;border-radius:50%;margin-bottom:15px">
+        <h3>José Miguel Casimiro Francisco</h3>
+        <p style="opacity:0.8">Profissional de Informática & Tecnologia</p>
+      </div>
+      <div style="flex:2">
+        <table>
+          <tr><th>Nome Completo</th><td>José Miguel Casimiro Francisco</td></tr>
+          <tr><th>Data de Nascimento</th><td>01/01/2006</td></tr>
+          <tr><th>Naturalidade</th><td>Cabinda</td></tr>
+          <tr><th>Residência</th><td>Cabinda</td></tr>
+          <tr><th>Estado Civil</th><td>Solteiro</td></tr>
+          <tr><th>Área Profissional</th><td>Informática e Tecnologia</td></tr>
+          <tr><th>Línguas</th><td>Português (Nativo), Inglês (Avançado – C1)</td></tr>
+        </table>
+      </div>
     </div>
-  </div>
-</section><section id="formacao">
-  <h2>Formação Académica</h2>
-  <div class="card">
-    <h3>Universidade</h3>
-    <p>Universidade Lusíada de Cabinda<br>Curso: Gestão de Informática (1º Ano)</p>
-  </div>
-  <div class="card">
-    <h3>Ensino Médio</h3>
-    <p>Escola de Formação de Professores – Magistério de Cabinda<br>Opção: Ensino Primário</p>
-  </div>
-  <div class="card">
-    <h3>Idiomas</h3>
-    <p>Curso de Inglês</p>
-  </div>
-</section><section id="habilidades">
-  <h2>Habilidades Técnicas</h2>
-  <div class="grid">
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/919/919827.png"><h3>HTML5</h3><p>Estruturação de sites</p></div>
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/919/919826.png"><h3>CSS3</h3><p>Design responsivo</p></div>
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/919/919828.png"><h3>JavaScript</h3><p>Lógica e interatividade</p></div>
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/6124/6124995.png"><h3>Linux</h3><p>Comandos básicos</p></div>
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/732/732225.png"><h3>Windows</h3><p>Uso avançado</p></div>
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/888/888867.png"><h3>Office</h3><p>Word, Excel, PowerPoint</p></div>
-  </div>
-</section><section id="aulas">
-  <h2>Aulas e Capacitação</h2>
-  <div class="grid">
-    <div class="card"><h3>HTML & CSS</h3><ul><li>Estrutura</li><li>Layouts</li><li>Responsividade</li></ul><p class="preco">25.000 Kz</p><a class="btn" href="https://wa.me/244921567927" target="_blank">Inscrever-se / WhatsApp</a></div>
-    <div class="card"><h3>JavaScript Básico</h3><ul><li>Lógica</li><li>Funções</li><li>Eventos</li></ul><p class="preco">30.000 Kz</p><a class="btn" href="https://wa.me/244921567927" target="_blank">Inscrever-se / WhatsApp</a></div>
-    <div class="card"><h3>Informática Prática</h3><ul><li>Windows</li><li>Office</li><li>Internet</li></ul><p class="preco">20.000 Kz</p><a class="btn" href="https://wa.me/244921567927" target="_blank">Inscrever-se / WhatsApp</a></div>
-    <div class="card"><h3>Suporte Técnico</h3><ul><li>Manutenção</li><li>Diagnóstico</li></ul><p class="preco">35.000 Kz</p><a class="btn" href="https://wa.me/244921567927" target="_blank">Inscrever-se / WhatsApp</a></div>
-  </div>
-</section><section id="vendas">
-  <h2>Loja de Materiais Tecnológicos</h2>
-  <h3>Computadores</h3>
-  <div class="grid">
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/891/891230.png"><p>Processadores</p></div>
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/1160/1160155.png"><p>Placas-mãe</p></div>
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/1183/1183672.png"><p>Memórias RAM</p></div>
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/2942/2942612.png"><p>Discos SSD/HDD</p></div>
-  </div>  <h3>Acessórios</h3>
-  <div class="grid">
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/1693/1693427.png"><p>Teclados</p></div>
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/356/356070.png"><p>Ratos</p></div>
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png"><p>Headsets</p></div>
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/2910/2910764.png"><p>Cabos</p></div>
-  </div>  <h3>Redes</h3>
-  <div class="grid">
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/1082/1082609.png"><p>Roteadores</p></div>
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/3534/3534352.png"><p>Switches</p></div>
-    <div class="card product"><img src="https://cdn-icons-png.flaticon.com/512/2910/2910764.png"><p>Cabos de Rede</p></div>
-  </div>
-</section><section id="servicos">
-  <h2>Serviços Técnicos</h2>
-  <div class="grid">
-    <div class="card">Manutenção de Computadores - 35.000 Kz</div>
-    <div class="card">Instalação de Sistemas (Windows/Linux) - 25.000 Kz</div>
-    <div class="card">Configuração de Redes - 30.000 Kz</div>
-    <div class="card">Suporte Técnico - 20.000 Kz</div>
-  </div>
-  <a class="btn" href="https://wa.me/244921567927" target="_blank">Contato via WhatsApp</a>
-</section></main><footer>
+  </section>
+  <section id="formacao">
+    <h2>Formação Académica</h2>
+    <div class="card">
+      <h3>Universidade</h3>
+      <p>Universidade Lusíada de Cabinda<br>Curso: Gestão de Informática (1º Ano)</p>
+    </div>
+    <div class="card">
+      <h3>Ensino Médio</h3>
+      <p>Escola de Formação de Professores – Magistério de Cabinda<br>Opção: Ensino Primário</p>
+    </div>
+    <div class="card">
+      <h3>Idiomas</h3>
+      <p>Inglês</p>
+<p>Português</p>
+    </div>
+  </section>
+  <section id="habilidades">
+    <h2>Habilidades Técnicas</h2>
+    <div class="grid">
+      <div class="card product"><img src="html.png"><h3>HTML5</h3><p>Estruturação de sites</p></div>
+      <div class="card product"><img src="css.png"><h3>CSS3</h3><p>Design responsivo</p></div>
+      <div class="card product"><img src="javascript.png"><h3>JavaScript</h3><p>Lógica e interatividade</p></div>
+      <div class="card product"><img src="linux.png"><h3>Linux</h3><p>Comandos básicos</p></div>
+      <div class="card product"><img src="windows.png"><h3>Windows</h3><p>Uso avançado</p></div>
+      <div class="card product"><img src="office.png"><h3>Office</h3><p>Word, Excel, PowerPoint</p></div>
+      <div class="card product"><img src="telefone.png"><h3>Android Cracking</h3><p>Desbloqueio de Telemoveis Android</p></div>
+    </div>
+  </section>
+  <section id="aulas">
+    <h2>Aulas e Capacitação</h2>
+    <div class="grid">
+      <div class="card"><h3>HTML & CSS</h3><ul><li>Estrutura</li><li>Layouts</li><li>Responsividade</li></ul><p class="preco">25.000 Kz</p><a class="btn" href="https://wa.me/244921567927" target="_blank">Inscrever-se / WhatsApp</a></div>
+      <div class="card"><h3>JavaScript Básico</h3><ul><li>Lógica</li><li>Funções</li><li>Eventos</li></ul><p class="preco">30.000 Kz</p><a class="btn" href="https://wa.me/244921567927" target="_blank">Inscrever-se / WhatsApp</a></div>
+      <div class="card"><h3>Informática Prática</h3><ul><li>Windows</li><li>Office</li><li>Internet</li></ul><p class="preco">20.000 Kz</p><a class="btn" href="https://wa.me/244921567927" target="_blank">Inscrever-se / WhatsApp</a></div>
+      <div class="card"><h3>Suporte Técnico</h3><ul><li>Manutenção</li><li>Diagnóstico</li></ul><p class="preco">35.000 Kz</p><a class="btn" href="https://wa.me/244921567927" target="_blank">Inscrever-se / WhatsApp</a></div>
+    </div>
+  </section>
+  <section id="vendas">
+    <h2>Loja de Materiais Tecnológicos</h2>
+    <h3>Computadores</h3>
+    <div class="grid">
+      <div class="card product"><img src="Indisponivel.png"><p>Processadores</p></div>
+      <div class="card product"><img src="Indisponivel.png"><p>Placas-mãe</p></div>
+      <div class="card product"><img src="Indisponivel.png"><p>Memórias RAM</p></div>
+      <div class="card product"><img src="Indisponivel.png"><p>Discos SSD/HDD</p></div>
+    </div>
+    <h3>Acessórios</h3>
+    <div class="grid">
+      <div class="card product"><img src="Indisponivel.png"><p>Teclados</p></div>
+      <div class="card product"><img src="Indisponivel.png"><p>Ratos</p></div>
+      <div class="card product"><img src="Indisponivel.png"><p>Headsets</p></div>
+      <div class="card product"><img src="Indisponivel.png"><p>Cabos</p></div>
+    </div>
+    <h3>Redes</h3>
+    <div class="grid">
+      <div class="card product"><img src="Indisponivel.png"><p>Roteadores</p></div>
+      <div class="card product"><img src="Indisponivel.png"><p>Switches</p></div>
+      <div class="card product"><img src="Indisponivel.png"><p>Cabos de Rede</p></div>
+    </div>
+  </section>
+  <section id="servicos">
+    <h2>Serviços Técnicos</h2>
+    <div class="grid">
+      <div class="card">Manutenção de Computadores - 10.000 Kz</div>
+      <div class="card">Instalação de Sistemas (Windows/Linux) - 10.000 Kz</div>
+      <div class="card">Configuração de Redes - 10.000 Kz</div>
+      <div class="card">Suporte Técnico - 15.000 Kz</div>
+    </div>
+    <a class="btn" href="https://wa.me/244921567927" target="_blank">Contato via WhatsApp</a>
+  </section>
+</main>
+<footer>
   © 2026 – José Miguel Casimiro Francisco | Portfólio Profissional
-</footer><script>
+</footer>
+<script>
 let lang='pt';
 const text={pt:{welcome:'Bem-vindo',welcomeText:'Este é o meu site profissional, criado para apresentar as minhas competências na área da informática, ensino tecnológico e comercialização de materiais tecnológicos.'},
 en:{welcome:'Welcome',welcomeText:'This is my professional website to present my IT skills, technology teaching and tech materials sales.'}};
 function show(id){document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');}
 function toggleLang(){lang=lang==='pt'?'en':'pt';document.getElementById('welcome').innerText=text[lang].welcome;document.getElementById('welcomeText').innerText=text[lang].welcomeText;}
-</script></body>
+</script>
+</body>
 </html>
