@@ -1,427 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Logotipo.png.jpg" type="image/x-icon">
-    <title>Global Skills Academy</title>
-    <link rel="stylesheet" href="Global Skills Academy.css">
-    <style>
-        *{
-            font-family: monospace;
-        }
-      body{
-            color: black;
-            margin: 5px;
-            padding: 2px;
-        }
-        section{
-
-        }
-        content{
-        }
-        .header{
-            background-color: rgb(39, 100, 170);
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        logo{
-            font-size: 2em;
-            text-align: center;
-            line-height: 1%;
-            margin-top: 0.1%;
-        }
-        .global{
-            color: white;
-        }
-        .skills{
-            color: white;
-        }
-        .academy{
-            color: white;
-        }
-        Sigla{
-            margin: 12px;
-        }
-        .myphoto{
-            display: flex;
-            flex-wrap: wrap;
-            align-content: space-between;
-            width: 100%;
-        }
-        .me{
-            width: 50%;
-           border-radius: 7px;
-        }
-        aside{
-            font-family: 'Times New Roman', Times, serif;
-            padding: 5px;
-            width: 48%;
-            line-height: 180%;
-            font-size: 1.3em;
-            text-align: justify;
-        }
-        
-        .Formações{
-            text-align: center;
-            background-color:  rgb(39, 100, 170);
-            border-radius: 7px;
-            color: white;
-            font-size: 2em;
-        }
-        .Diversos{
-            text-align: center;
-            background-color:  rgb(39, 100, 170);
-            border-radius: 7px;
-            color: white;
-            font-size: 2em;
-        }
-        nav{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 0 auto;
-        }
-        .first li{
-            
-            color: black;
-            font-style: strong;
-            line-height: 30px;
-        }
-        .second li{
-            font-size: 1.2em;
-            color: blue;
-        }
-        footer{
-            background-color: rgb(231, 233, 236);
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            
-        }
-        .about{
-            font-size: 2em;
-        }
-        .social{
-            font-size: 2em;
-        }
-        .autor{
-            list-style-type: none;
-        }
-        .email{
-            list-style-type: none;
-        }
-        .tel{
-            list-style-type: none;
-        }
-        .hora{
-            width: 3%;
-            
-        }
-        .imagem{
-            padding:5px;
-            width: 8%;
-            border-radius: 7px;
-        }
-        .aprenda{
-            color: white;
-            font-size: 1.7em;
-        }
-        .headered{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            list-style-type: none;
-            
-        }
-        .lis{
-
-            cursor: pointer;
-            color: blue;
-            background-color: white;
-            padding: 4px;
-            border-radius: 5px;
-
-        }
-        .lis:hover{
-            background-color: blue;
-            color: white;
-        }
-        .lis:active{
-                background-color: rgb(54, 209, 54);
-        }
-        lema{
-            text-align: center;
-        }
-        .link{
-            justify-content: space-between;
-            color: rgb(61, 8, 252);
-            background-color: white;
-            border-radius: 15px;
-            padding: 10px;
-            margin-left: 5px;
-        }
-        .link:hover{
-            color: rgb(4, 168, 12);
-        }
-        .link:active{
-            background-color: yellow;
-
-        }
-        .work{
-            cursor: pointer;
-            color: black;
-            font-style: strong;
-            line-height: 30px;
-            
-        }
-        strong:hover{
-            cursor: pointer;
-            text-decoration: underline 3px blue;
-        }
-        .last{
-            line-height: 30px;
-            list-style-type: none;
-        }
-        
-
-       
-
-@media (max-width: 750px){
-    *{
-        font-family: sans-serif;
-    }
-    body{
-        margin: 0px;
-    }
-            logo{
-                text-align: center;
-                width: 100%;
-                font-size: 2em;
-            }
-            .headered{
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                margin: auto;
-                padding: 10px;
-                gap: 10px;
-                list-style-type: none;
-                
-                
-                   
-            }
-            .lis{
-                padding: 10px;
-                font-size: 1.4em;
-                
-            }
-            
-            .lis:active{
-                background-color: blue;
-            }
-            Sigla{
-                text-align: center;
-                margin: 0 auto;
-                
-            }
-            .logo{
-                width: max-content;
-            }
-            .me{
-                width: 100%;
-            }
-            aside{
-                width: 100%;
-            }
-            #cadastrar{
-                width: 195%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>José Miguel Casimiro Francisco | Portfólio Profissional</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Segoe UI,Arial,sans-serif}
+    html, body {height: 100%; margin:0;} /* ✅ Corrige altura total */
+    body{background:#e0f7fa;color:#333;line-height:1.6; display:flex; flex-direction:column;} /* ✅ Flex vertical */
+    header{background:rgb(31, 151, 199);color:#fff;padding:30px}
+    header h1{font-size:32px}
+    header p{font-size:16px;opacity:0.9}
+    nav{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px}
+    nav button{padding:10px 14px;border:none;border-radius:6px;background:#fff;color:#0a3d62;font-weight:bold;cursor:pointer}
+    nav button:hover{background:#dff1ff}
+    main{padding:30px;max-width:1200px;margin:auto; flex:1;} /* ✅ Ocupa espaço restante */
+    section{display:none}
+    section.active{display:block}
+    h2{margin-bottom:20px;color:#0a3d62;font-size:26px}
+    h3{margin-bottom:10px;color:#07406b}
+    .card{background:#fff;padding:25px;margin-bottom:20px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .product img{width:100%;height:140px;object-fit:contain;margin-bottom:10px}
+    .btn{display:inline-block;margin-top:10px;padding:10px 15px;background:#0a3d62;color:#fff;border-radius:6px;text-decoration:none}
+    footer{text-align:center;padding:20px;background:#ddd;margin-top:40px}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:8px;border-bottom:1px solid #ddd;text-align:left}
+  </style>
 </head>
 <body>
-<section>
-    <div class="header">
-    <logo>
-        <p class="global">Global</p>
-        <p class="skills">Skills</p>
-         <p class="academy">Academy</p>
-    </logo>
-    <lema>
-        <p class="aprenda">
-            Aprenda hoje e Conquista o Amanhã
-        </p>
-        <li type="none" style="color: white;">
-            <img class="hora" src="alarm-clock.png" alt="hora">Horário de Atendimento: Segunda - Sexta das 6h00-22h00, Incluíndo Sábado e Domingo
-        </li>
-        <br>
-        <div>
-            <ul class="headered">
-                <li class="lis">
-                    About
-                     
-                </li>
-                <li class="lis">
-                Contactos
-                </li>
-                <li class="lis">
-                    Formações
-                </li>
-                <li class="lis">
-                    Diversos
-                </li>
-                <li class="lis">
-                    Ajuda
-                <li class="lis">
-                Login
-                </li>
-                <li class="lis" id="cadastrar">
-                    Cadastrar
-                </li>
-
-            </ul>
-        </div>
-    </lema>
-     
-    <Sigla>
-        <img class="logo" src="Logotipo.png.jpg" alt="Logo">
-    </Sigla>
+<header>
+  <h1>José Miguel Casimiro Francisco</h1>
+  <p>Informática • Tecnologia • Ensino</p>
+  <nav>
+    <button onclick="show('home')">Início</button>
+    <button onclick="show('info')">Informações Pessoais</button>
+    <button onclick="show('formacao')">Formação Académica</button>
+    <button onclick="show('habilidades')">Habilidades Técnicas</button>
+    <button onclick="show('aulas')">Aulas</button>
+    <button onclick="show('vendas')">Loja Tecnológica</button>
+    <button onclick="show('servicos')">Serviços Técnicos</button>
+    <button onclick="toggleLang()">PT / EN</button>
+  </nav>
+</header>
+<main>
+  <section id="home" class="active">
+    <div class="card">
+      <h2 id="welcome">Bem-vindo</h2>
+      <p id="welcomeText">Este é o meu site profissional, criado para apresentar as minhas competências na área da informática, ensino tecnológico e comercialização de materiais tecnológicos.</p>
     </div>
-
-    <div class="myphoto">
-        
-        <img class="me" src="myphoto.jpg" alt="Imagem">
-        <aside><br>Olá, Sou o José Francisco. Formado em pedagogia (Ensino-Primário).<br>
-Actualmente frequentando o Primeiro ano na Universidade Lusíada de Cabinda no curso  “Gestão de Informática”<br>
-Proponho esta descrição a fim de transmitir os meus conhecimento para os leigos em Inglês e Informática, para os  que precisam aprimorar os seus conhecimentos em áreas abaixo:
-        </aside>
-
+  </section>
+  <section id="info">
+    <h2>Informações Pessoais</h2>
+    <div class="card" style="display:flex;gap:30px;align-items:flex-start;flex-wrap:wrap">
+      <div style="flex:1;text-align:center">
+        <img src="myphoto.jpg" alt="Perfil" style="width:160px;border-radius:50%;margin-bottom:15px">
+        <h3>José Miguel Casimiro Francisco</h3>
+        <p style="opacity:0.8">Profissional de Informática & Tecnologia</p>
+      </div>
+      <div style="flex:2">
+        <table>
+          <tr><th>Nome Completo</th><td>José Miguel Casimiro Francisco</td></tr>
+          <tr><th>Data de Nascimento</th><td>01/01/2006</td></tr>
+          <tr><th>Naturalidade</th><td>Cabinda</td></tr>
+          <tr><th>Residência</th><td>Cabinda</td></tr>
+          <tr><th>Estado Civil</th><td>Solteiro</td></tr>
+          <tr><th>Área Profissional</th><td>Informática e Tecnologia</td></tr>
+          <tr><th>Línguas</th><td>Português (Nativo), Inglês (Avançado – C1)</td></tr>
+        </table>
+      </div>
     </div>
-    <nav>
-    <content>
-        <p class="Formações">
-            Formações Disponíveis
-        </p>
-        <ul class="first li">
-            <li><strong>
-                INGLÊS
-            </strong>
-                
-            </li>
-            <li><strong>
-                PORTUGUÊS
-                </strong>
-                
-            </li>
-            <li><strong>MATEMÁTICA BÁSICA
-
-            </strong>
-                
-            </li>
-            <li><strong>INFORMÁTICA:
-
-            </strong>
-                
-                
-            </li>
-            <ul class="second li">
-                <li>
-                    Instalação de Programas e Sistemas Operacionais
-                </li>
-                <li>
-                    Pacotes Office
-                </li>
-                <li>
-                    Computador e Internet
-                </li>
-                <li>
-                    Programação Web
-                </li>
-                    
-            </ul>
-        </ul>
-
-    </content>
-    <article>
-        <p class="Diversos">
-            Diversos
-        </p>
-        <ul class="work">
-            <li><strong>
-                TRABALHOS INVESTIGATIVOS
-            </strong>
-                
-            </li>
-           <li><strong>
-            DIGITAÇÃO DE DOCUMENTOS
-           </strong>
-            
-           </li>
-           <li><strong>
-            CRIAÇÃO IMEDIATA DE CURRÍCULUM
-           </strong>
-            
-           </li> 
-           <li><strong>
-            MANUTENÇÃO DE COMPUTADOR
-           </strong>
-            
-           </li>
-        </ul>
-    </article>
-    </nav>
- 
-
-</section>
-   <footer>
-    
-        <ul>
-            <p class="about">
-        Sobre Mim
-    </p>
-            <div class="autor">
-            <li>
-                AUTOR:
-            </li>
-            <li>
-                <strong>JOSÉ MIGUEL CASIMIRO FRANCISCO</strong>
-            </li>
-            </div>
-            <br>
-            <div class="email">
-            <li>
-                Email:
-            </li>
-            <li>
-                <a href="#">josemgfrancisco32@gmail.com</a>
-            </li>
-            </div>
-            <br>
-            <div class="tel">
-                <li>
-                    TEL:
-                </li>
-                <li>
-                    <a href="#">+244 928 465 953</a>
-                </li>
-                
-            </div>
-            
-        </ul>
-       
-        <ul class="last">
-             <p class="social">
-            Minhas Conecções
-
-        </p>
-            
-            <li><a href="https://wa.me.+244921567927/"><img class="imagem" src="whatsapp.jpg" alt="whatsapp">Whatsapp</a></li>
-            <li><a href="https://www.linkedin.com/in/jose-francisco-54671936a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img class="imagem" src="linkedin.jpg" alt="linkedin">LinkedIn</a></li>
-            <li><a href="#"><img class="imagem" src="instagram.jpg" alt="instagram">Instagram</a></li>
-            <li><a href="#"> <img class="imagem" src="facebook.jpg" alt="facebook">Facebook</a></li>
-            
-        </ul>
-    </footer>
+  </section>
+  <section id="formacao">
+    <h2>Formação Académica</h2>
+    <div class="card">
+      <h3>Universidade</h3>
+      <p>Universidade Lusíada de Cabinda<br>Curso: Gestão de Informática (1º Ano)</p>
+    </div>
+    <div class="card">
+      <h3>Ensino Médio</h3>
+      <p>Escola de Formação de Professores – Magistério de Cabinda<br>Opção: Ensino Primário</p>
+    </div>
+    <div class="card">
+      <h3>Idiomas</h3>
+      <p>Curso de Inglês</p>
+    </div>
+  </section>
+  <section id="habilidades">
+    <h2>Habilidades Técnicas</h2>
+    <div class="grid">
+      <div class="card product"><img src="html.png"><h3>HTML5</h3><p>Estruturação de sites</p></div>
+      <div class="card product"><img src="css.png"><h3>CSS3</h3><p>Design responsivo</p></div>
+      <div class="card product"><img src="javascript.png"><h3>JavaScript</h3><p>Lógica e interatividade</p></div>
+      <div class="card product"><img src="linux.png"><h3>Linux</h3><p>Comandos básicos</p></div>
+      <div class="card product"><img src="windows.png"><h3>Windows</h3><p>Uso avançado</p></div>
+      <div class="card product"><img src="office.png"><h3>Office</h3><p>Word, Excel, PowerPoint</p></div>
+      <div class="card product"><img src="telefone.png"><h3>Android Cracking</h3><p>Desbloqueio de Telemoveis Android</p></div>
+    </div>
+  </section>
+  <section id="aulas">
+    <h2>Aulas e Capacitação</h2>
+    <div class="grid">
+      <div class="card"><h3>HTML & CSS</h3><ul><li>Estrutura</li><li>Layouts</li><li>Responsividade</li></ul><p class="preco">25.000 Kz</p><a class="btn" href="https://wa.me/244921567927" target="_blank">Inscrever-se / WhatsApp</a></div>
+      <div class="card"><h3>JavaScript Básico</h3><ul><li>Lógica</li><li>Funções</li><li>Eventos</li></ul><p class="preco">30.000 Kz</p><a class="btn" href="https://wa.me/244921567927" target="_blank">Inscrever-se / WhatsApp</a></div>
+      <div class="card"><h3>Informática Prática</h3><ul><li>Windows</li><li>Office</li><li>Internet</li></ul><p class="preco">20.000 Kz</p><a class="btn" href="https://wa.me/244921567927" target="_blank">Inscrever-se / WhatsApp</a></div>
+      <div class="card"><h3>Suporte Técnico</h3><ul><li>Manutenção</li><li>Diagnóstico</li></ul><p class="preco">35.000 Kz</p><a class="btn" href="https://wa.me/244921567927" target="_blank">Inscrever-se / WhatsApp</a></div>
+    </div>
+  </section>
+  <section id="vendas">
+    <h2>Loja de Materiais Tecnológicos</h2>
+    <h3>Computadores</h3>
+    <div class="grid">
+      <div class="card product"><img src="Indisponivel.png"><p>Processadores</p></div>
+      <div class="card product"><img src="Indisponivel.png"><p>Placas-mãe</p></div>
+      <div class="card product"><img src="Indisponivel.png"><p>Memórias RAM</p></div>
+      <div class="card product"><img src="Indisponivel.png"><p>Discos SSD/HDD</p></div>
+    </div>
+    <h3>Acessórios</h3>
+    <div class="grid">
+      <div class="card product"><img src="Indisponivel.png"><p>Teclados</p></div>
+      <div class="card product"><img src="Indisponivel.png"><p>Ratos</p></div>
+      <div class="card product"><img src="Indisponivel.png"><p>Headsets</p></div>
+      <div class="card product"><img src="Indisponivel.png"><p>Cabos</p></div>
+    </div>
+    <h3>Redes</h3>
+    <div class="grid">
+      <div class="card product"><img src="Indisponivel.png"><p>Roteadores</p></div>
+      <div class="card product"><img src="Indisponivel.png"><p>Switches</p></div>
+      <div class="card product"><img src="Indisponivel.png"><p>Cabos de Rede</p></div>
+    </div>
+  </section>
+  <section id="servicos">
+    <h2>Serviços Técnicos</h2>
+    <div class="grid">
+      <div class="card">Manutenção de Computadores - 10.000 Kz</div>
+      <div class="card">Instalação de Sistemas (Windows/Linux) - 10.000 Kz</div>
+      <div class="card">Configuração de Redes - 10.000 Kz</div>
+      <div class="card">Suporte Técnico - 15.000 Kz</div>
+    </div>
+    <a class="btn" href="https://wa.me/244921567927" target="_blank">Contato via WhatsApp</a>
+  </section>
+</main>
+<footer>
+  © 2026 – José Miguel Casimiro Francisco | Portfólio Profissional
+</footer>
+<script>
+let lang='pt';
+const text={pt:{welcome:'Bem-vindo',welcomeText:'Este é o meu site profissional, criado para apresentar as minhas competências na área da informática, ensino tecnológico e comercialização de materiais tecnológicos.'},
+en:{welcome:'Welcome',welcomeText:'This is my professional website to present my IT skills, technology teaching and tech materials sales.'}};
+function show(id){document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');}
+function toggleLang(){lang=lang==='pt'?'en':'pt';document.getElementById('welcome').innerText=text[lang].welcome;document.getElementById('welcomeText').innerText=text[lang].welcomeText;}
+</script>
 </body>
 </html>
